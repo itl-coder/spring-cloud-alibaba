@@ -1,11 +1,22 @@
 server:
   port: 8081
 spring:
+  application:
+    name: user-service
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+
   datasource:
     url: jdbc:mysql://rm-cn-nwy3k7qod0004xno.rwlb.rds.aliyuncs.com:3306/cloud_user?useSSL=false
     username: root
     password: 123456wW
     driver-class-name: com.mysql.cj.jdbc.Driver
+
 mybatis:
   type-aliases-package: com.example.cloud.domain
   configuration:
