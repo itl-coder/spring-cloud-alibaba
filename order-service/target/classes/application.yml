@@ -3,14 +3,6 @@ server:
 spring:
   application:
     name: order-service
-
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        service-name: ${spring.application.name}
-
   datasource:
     url: jdbc:mysql://rm-cn-nwy3k7qod0004xno.rwlb.rds.aliyuncs.com:3306/cloud_order?useSSL=false
     username: root

@@ -45,7 +45,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-
 			<!--spring cloud 2023.0.0-->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
